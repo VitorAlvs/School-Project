@@ -1,0 +1,53 @@
+.principal{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #61a5c2;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #89c2d9;
+    border-radius: 10px;
+    height: 50vh;
+}
+
+h1{
+    text-align: center;
+    
+}
+
+.input{
+    width: 700px;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.col-index{
+    text-align: center;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    margin: 20px;
+    padding: 20px;
+    background-color: #a9d6e5;
+    border-radius: 10px;
+    width: 700px;
+}
+
+.link{
+    color: black;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+a:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,33 @@
+.principal{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #61a5c2;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #89c2d9;
+    border-radius: 10px;
+    height: 50vh;
+}
+
+h1{
+    text-align: center;
+    
+}
+
+.input{
+    width: 700px;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

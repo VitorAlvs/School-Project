@@ -1,0 +1,49 @@
+create database bd_escola;
+
+use bd_escola;
+
+create table tb_aluno(
+	ra int (4) not null primary key,
+    nome_aluno varchar (60) not null,
+    sobrenome_aluno varchar (60) not null,
+    senha_aluno int (4) not null unique);
+    
+select * from tb_aluno;
+    
+create table tb_professor(
+	rp int (4) not null primary key,
+    nome_prof varchar (60) not null,
+    senha_prof int (4) not null unique);
+    
+select * from tb_professor;
+    
+create table tb_boletim(
+	notaL decimal(2,1) not null,
+    notaW decimal(2,1) not null,
+    notaT decimal(2,1) not null,
+    media_final decimal(2,1) not null,
+	ra int (4) not null,  
+    rp int (4) not null);
+        
+create table tb_administrador(
+	radm int(4) not null primary key,
+    nome_administrador varchar (60) not null,
+    sobrenome_administrador varchar (60) not null,
+    senha_administrador int (4) not null);
+    
+select * from tb_administrador;
+    
+insert into tb_administrador (radm, nome_administrador, sobrenome_administrador, senha_administrador) values
+(1234, 'João', 'Vitor' , 4321);
+
+insert into tb_aluno (ra, nome_aluno, sobrenome_aluno, senha_aluno) values
+(1274,	'Julio', 'Silva', 3333),
+(2345,	'Maria', 'Santos', 1111),
+(3456,	'Pedro', 'Almeida', 2222),
+(4567,	'Ana', 'Oliveira', 4444),
+(5678,	'Carlos', 'Souza', 1235),
+(6789,	'Sofia', 'Pereira', 8888),
+(7890,	'Lucas', 'Costa', 9898),
+(8901,	'Laura'	,'Rodrigues', 2344),
+(9012,	'Matheus', 'Carvalho', 6779),
+(0123,	'Gabriela',	'Fernandes', 9014);
